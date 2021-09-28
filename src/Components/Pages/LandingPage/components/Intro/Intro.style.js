@@ -8,6 +8,7 @@ export const IntroStyles = styled.main`
   justify-content: space-evenly;
   @media only screen and (max-width: 600px) {
       margin-top: 0px;
+      min-height:300px ;
   }
   & .Intro-Section1{
     display: flex;
@@ -22,7 +23,7 @@ export const IntroStyles = styled.main`
       font-size: 2rem;
     }
     @media only screen and (max-width: 500px) {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
     & .rectangle{
       position:absolute;

@@ -8,6 +8,9 @@ export const HeroStyled=styled.main`
   align-items: center;
   position: relative;
   overflow: hidden;
+  @media only screen and (max-width: 600px) {
+      min-height:500px ;
+  }
   & img{
     z-index: 1;
     @media only screen and (max-width: 600px) {
