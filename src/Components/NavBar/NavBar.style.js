@@ -66,7 +66,7 @@ export const NavBarStyled = styled.header`
       }
       & svg{
         align-self: flex-end;
-        margin: 25px 0px;
+        margin: 25px 0px 25px 0px;
         transition: 0.5s;
         transform: rotate(${props=>props.openNav?"270deg":"0deg"});
       }
