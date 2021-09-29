@@ -19,7 +19,7 @@ const RightSection = () => {
         </section>
 
         <section className="Main-section-list-img-btn">
-          <img src={firething} alt="" />
+          <img src={firething} alt="" width="100%"/>
           <button className="GoToStore">Go To Store</button>
         </section>
 

@@ -7,6 +7,10 @@ export const RightSectionStyle = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
 
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+
   & .rightSectionHeader{
     display: flex;
     height: 80px;
@@ -21,6 +25,9 @@ export const RightSectionStyle = styled.section`
       text-shadow: 0px 3px 1px rgba(0,0,0,0.2);
       letter-spacing: 2px;
       font-weight: 300;
+      @media only screen and (max-width: 500px) {
+        font-size: 2.2rem;
+      }
     }
 
     & .rightSectionHeader-shop{
@@ -41,29 +48,48 @@ export const RightSectionStyle = styled.section`
 
   & .rightSectionMain{
     height: 620px;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     background-color: #E2D9D4;
     border-top: thin solid #855744;
     border-left: thin solid #FCFDFF;
-
+    @media only screen and (max-width: 500px) {
+      height:420px;
+    }
+    @media only screen and (max-width: 400px) {
+      height:320px;
+    }
     & .Main-section-list{
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: flex-start;
       margin-left: 40px;
-      width: 50%;
+      min-width: 50%;
       height: 100%;
       font-size: 3rem;
       text-shadow: 0px 3px 1px rgba(0,0,0,0.2);
       letter-spacing: 2px;
       font-weight: 300;
+      @media only screen and (max-width: 700px) {
+        /* margin-left: 0px; */
+        font-size: 1.5rem;
+      }
 
+      @media only screen and (max-width: 500px) {
+        margin-left: 10px;
+      }
     }
     & .Main-section-list h3{
       cursor: pointer;
+      @media only screen and (max-width: 700px) {
+      text-align: center;
+      }
+      @media only screen and (max-width: 400px) {
+        font-size: 1.2rem;
+      }
     }
+    
 
     & .Main-section-list-img-btn{
       display: flex;

@@ -8,7 +8,7 @@ const Selling = () => {
         <img src={img2} alt="" width="110%" className="img2-Sell"/>
       </section>
 
-      {/* <RightSection/> */}
+      <RightSection/>
 
     </SellingStyles>
    );

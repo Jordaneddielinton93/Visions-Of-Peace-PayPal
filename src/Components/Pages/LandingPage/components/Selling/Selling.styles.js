@@ -5,6 +5,12 @@ export const SellingStyles = styled.main`
   margin-top: 190px;
   width: 100%;
   min-height: 800px;
+  @media only screen and (max-width: 500px) {
+    margin-top: 60px;
+  }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+  }
   
   & .LeftSection{
     width: 30%;

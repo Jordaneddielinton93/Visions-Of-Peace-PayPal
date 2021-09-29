@@ -57,7 +57,7 @@ export const NavBarStyled = styled.header`
       display: flex;
       flex-direction: column;
       font-size: 2rem;
-      min-height: 300px;
+      min-height: 10vh;
       width: 100%;
       position: absolute;
       right: 0;
