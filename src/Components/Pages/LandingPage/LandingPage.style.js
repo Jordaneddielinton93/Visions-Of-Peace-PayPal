@@ -5,5 +5,6 @@ export const LandingPageStyled = styled.div`
   min-height: 150vh;
   background-color:#DDD8D5;
   margin: auto;
-  
+  /* position: fixed; */
+  left: 5%;
 `

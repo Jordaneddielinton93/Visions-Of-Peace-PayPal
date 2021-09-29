@@ -32,8 +32,8 @@ export const IntroStyles = styled.main`
       width: 100px;
       height: 100%;
       background-color:#E2D9D4 ;
-      border-top:#FCFDFF thick solid ;
-      border-right:#855744 thin solid ;
+      border-top:#855744 thick solid ;
+      border-right:#FCFDFF thin solid ;
     }
     & .intro-Name{
       z-index: 2;
@@ -49,8 +49,8 @@ export const IntroStyles = styled.main`
     align-items: center;
     width: 450px;
     background-color: #E2D9D4;
-    border-top:#FCFDFF thick solid ;
-    border-left:#855744 thick solid ;
+    border-top:#855744 thick solid ;
+    border-left:#FCFDFF thick solid ;
     font-size: 2rem;
     @media only screen and (max-width: 900px) {
       font-size: 1rem;
