@@ -25,21 +25,22 @@ export const RightSectionStyle = styled.section`
       text-shadow: 0px 3px 1px rgba(0,0,0,0.2);
       letter-spacing: 2px;
       font-weight: 300;
+
       @media only screen and (max-width: 500px) {
         font-size: 2.2rem;
       }
     }
 
     & .rightSectionHeader-shop{
-      font-style:italic;
+      
       color: black;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color:#FCFDFF ;
       border-radius: 100px;
-      border: thin solid black;
+      border: thin inset black;
       height: 54px;
       width: 54px;
       margin-left: 20px;
