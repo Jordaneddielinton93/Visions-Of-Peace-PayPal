@@ -19,8 +19,14 @@ export const SellingStyles = styled.main`
     height: 620px;
     align-self: flex-end;
 
+    @media only screen and (max-width: 1000px) {
+      align-self: center;
+      width: 100%;
+    }
+
     & .img2-Sell{
-      max-width:100% ;
+      width:70% ;
+      max-height:100% ;
     }
   }
 `
