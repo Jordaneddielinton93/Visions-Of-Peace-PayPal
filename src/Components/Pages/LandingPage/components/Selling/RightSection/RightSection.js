@@ -28,6 +28,7 @@ const RightSection = () => {
         <div className="rightSectionHeader-shop">shop</div>
       </header>
 
+
       <main className="rightSectionMain">
         <section className="Main-section-list">
           <h3 style={counter!==1?Liststyle:null}>Stone</h3>
