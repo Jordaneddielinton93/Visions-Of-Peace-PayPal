@@ -5,7 +5,7 @@ const AboutBottom = () => {
 
 
       <section className="About_bottom__left">
-        <img alt="" srcset={aboutimgBtm} height="70%" />
+        <img alt="" className="About_bottom__left-img" srcset={aboutimgBtm} height="70%" style={{border:"solid thin white"}} />
       </section>
 
 

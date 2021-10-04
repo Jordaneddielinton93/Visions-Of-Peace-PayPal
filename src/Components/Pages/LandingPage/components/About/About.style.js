@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const AboutStyles = styled.div`
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   min-height:90vh ;
   position: relative;
   
@@ -35,7 +35,7 @@ export const AboutStyles = styled.div`
       font-style: italic;
       font-weight: 500;
       height: 20%;
-      width: 90%;
+      width: 80%;
       text-align: left;
       
     }
@@ -52,6 +52,10 @@ export const AboutStyles = styled.div`
         text-align: left;
         width: 50%;
       }
+      &-img{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            cursor: pointer;
+      }
     }
   }
 
@@ -67,6 +71,17 @@ export const AboutStyles = styled.div`
     &__left{
       width: 30%;
       height:100% ;
+      &-img{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        cursor: pointer;
+        transition: 0.5s;
+
+        &:hover{
+          transition: 0.5s;
+          box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+          height:75% ;
+        }
+      }
     }
 
 
@@ -97,15 +112,19 @@ export const AboutStyles = styled.div`
       }
 
       &-imgContainer{
-        height:40% ;
+        height:45% ;
         width: 100%;
         display: flex;
         justify-content: space-between;
         & .btm-imgs{
           height:100% ;
-          width:130px ;
+          width:140px ;
           border: solid thin white;
           background-color: whitesmoke;
+          &:hover{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            cursor: pointer;
+          }
         }
       }
     }

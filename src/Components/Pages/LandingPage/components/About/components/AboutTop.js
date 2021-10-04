@@ -20,7 +20,7 @@ const AboutTop = () => {
           
         </article>
 
-        <img srcSet={aboutimgTop} alt="" height="100%" />
+        <img srcSet={aboutimgTop} alt="" height="100%" className="img-p_container-img"/>
 
       </div>
     </div>
