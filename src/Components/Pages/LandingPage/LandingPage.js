@@ -1,6 +1,7 @@
 
 import { useContext } from "react";
 import { pageWrapper } from "../../App/App";
+import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Intro from "./components/Intro/Intro";
 import Selling from "./components/Selling/Selling";
@@ -13,6 +14,7 @@ const LandingPage = () => {
   return ( 
     <LandingPageStyled positionForNavClick={stateObj}>
       <Hero/>
+      <About/>
       <Intro/>
       <Selling/>
       <h1>gallary will go here</h1>

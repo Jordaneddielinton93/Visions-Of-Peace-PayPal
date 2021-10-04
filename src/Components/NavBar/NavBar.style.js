@@ -18,7 +18,7 @@ export const NavBarStyled = styled.header`
     position: fixed;
     transition: 0.2s;
     top: ${props=>props.offSetY>60?0:8+"vh"};
-    z-index:12;
+    z-index:20;
     background-color:rgba(221, 216, 213,0.8) ;
     & .desktop-ul{
       display: flex;
