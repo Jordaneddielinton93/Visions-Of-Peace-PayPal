@@ -33,6 +33,7 @@ export const AboutStyles = styled.div`
       font-weight: 500;
       height: 20%;
       width: 90%;
+      text-align: left;
       
     }
     & .img-p_container{
@@ -40,12 +41,13 @@ export const AboutStyles = styled.div`
       height:80% ;
       width: 90%;
       align-self: center;
-
+      justify-content: space-evenly;
       & .img-p_container_text{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
         text-align: left;
+        width: 50%;
       }
     }
   }
@@ -80,12 +82,15 @@ export const AboutStyles = styled.div`
       &-btn{
         width: 120px;
         height:44px ;
-        font-size: 1rem;
+        font-size: 1.5rem;
         background-color:#855744 ;
         color: whitesmoke;
         border: solid thin white;
         border-radius: 10px;
-
+        &:hover{
+          background-color:#946e5e ;
+          cursor: pointer;
+        }
       }
 
       &-imgContainer{
