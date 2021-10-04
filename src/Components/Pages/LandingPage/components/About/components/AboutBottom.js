@@ -24,9 +24,9 @@ const AboutBottom = () => {
         </button >
 
         <div className="About_bottom__right-imgContainer">
-          <img  alt="" srcset="" width="30%" className="btm-imgs"/>
-          <img  alt="" srcset="" width="30%" className="btm-imgs"/>
-          <img  alt="" srcset="" width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
         </div>
       </section>
 

@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 export const AboutStyles = styled.div`
   width: 100%;
+  max-width: 1300px;
   min-height:90vh ;
   position: relative;
+  
+  margin:auto;
   margin-top: 60px;
   & .About-rectangle-background{
     position: absolute;
