@@ -15,8 +15,9 @@ const LandingPage = () => {
     <LandingPageStyled positionForNavClick={stateObj}>
       <Hero/>
       <About/>
-      <Intro/>
       <Selling/>
+      <Intro/>
+      
       <h1>gallary will go here</h1>
     </LandingPageStyled>
    );

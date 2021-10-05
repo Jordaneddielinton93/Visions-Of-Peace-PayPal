@@ -2,31 +2,34 @@ import styled from "styled-components";
 
 export const SellingStyles = styled.main`
   display: flex;
-  margin-top: 190px;
-  width: 100%;
-  min-height: 800px;
-  @media only screen and (max-width: 500px) {
-    margin-top: 60px;
-  }
-  @media only screen and (max-width: 1000px) {
-    flex-direction: column-reverse;
-  }
+  margin-top: 90px 0;
+  width: 96%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #E8DCD5;
+  border: 3px white solid;
+  border-left: none;
+  max-height:500px ;
+  align-items: center;
+  height:500px ;
   
-  & .LeftSection{
-    width: 30%;
-    max-height: 620px;
-    min-height: 620px;
-    height: 620px;
-    align-self: flex-end;
-
-    @media only screen and (max-width: 1000px) {
-      align-self: center;
-      width: 100%;
+  & .Angel_ImgContainer{    
+    display: flex;
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 500px) {
+      display: none;
     }
 
-    & .img2-Sell{
-      width:70% ;
-      max-height:100% ;
+
+    &-img{
+      max-width: 100%;
+      max-height: 500px;
     }
   }
+
+
+
 `

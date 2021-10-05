@@ -1,51 +1,38 @@
 import { RightSectionStyle } from "./RightSection.styles";
-import firething from "../../../../../Images/firething.png"
-import { useEffect, useState } from "react";
+import { FcPrevious } from 'react-icons/fc';
+import CardComp from "./CardComps/CardComp";
+
+import img1 from "../../../../../Images/firething.png"
+import { useState } from "react";
+
 const RightSection = () => {
 
-  let [counter,setCounter]= useState(0)
+  let imageArray=[img1,img1,img1,img1]
 
-  useEffect(()=>{
+  let [shownImg,setShownImg]=useState(0)
 
-    setTimeout(()=>{
-
-      counter===5?setCounter(1):setCounter(counter+1)
-      
-
-    },2000)
-
-  },[counter])
-
-  
-
-  let Liststyle={fontWeight:"500",pacity:0.8,color:"white"}
-
-  
   return ( 
     <RightSectionStyle>
-      <header className="rightSectionHeader">
-        <h1 className="rightSectionHeader-tile">What I Sell</h1>
-        <div className="rightSectionHeader-shop">shop</div>
-      </header>
+
+      <div className="leftArrowContainer">
+        <FcPrevious className="sellArrowSvg" onClick={()=>setShownImg(shownImg!==3?shownImg+1:0)}/>
+      </div>
 
 
-      <main className="rightSectionMain">
-        <section className="Main-section-list">
-          <h3 style={counter!==1?Liststyle:null}>Stone</h3>
-          <h3 style={counter!==2?Liststyle:null}>Crystals</h3>
-          <h3 style={counter!==3?Liststyle:null}>Braceletes</h3>
-          <h3 style={counter!==4?Liststyle:null}>Candles</h3>
-          <h3 style={counter!==5?Liststyle:null}>Sage</h3>
-
-        </section>
-
-        <section className="Main-section-list-img-btn">
-          <img src={firething} alt="" width="100%"/>
-          <button className="GoToStore">Go To Store</button>
-        </section>
-
-      </main>
       
+      <div className="ImgSliderCont">
+        <div className="ImgSliderCont_slider" style={{left:
+             shownImg===0 ?"0px":
+            (shownImg===1)?"-300px":
+            (shownImg===2)?"-600px":"-900px"}}>
+
+          {imageArray.map((item,index)=>{
+            return <CardComp height={index!==shownImg?"70%":"90%"}/>
+          })}
+          
+        </div>
+      </div>
+    
     </RightSectionStyle>
    );
 }
