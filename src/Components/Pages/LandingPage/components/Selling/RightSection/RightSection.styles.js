@@ -14,11 +14,22 @@ export const RightSectionStyle = styled.section`
     height:100%;
     display: flex;
     align-items: center;
+    position: relative;
     
     & .sellArrowSvg{
+      position: absolute;
       font-size: 3rem;
       stroke-width: 10px;
       fill: white;
+      height: 60px;
+      z-index: 10;
+      left: -13px;
+      & polygon{
+        color: white;
+        font-size: 2rem;
+
+        
+      }
       &:hover{
         cursor: pointer;
       }

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SellingStyles = styled.main`
   display: flex;
-  margin-top: 90px 0;
+  margin: 90px 0px;
   width: 96%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
