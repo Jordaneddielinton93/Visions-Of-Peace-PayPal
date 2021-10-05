@@ -29,7 +29,7 @@ export const RightSectionStyle = styled.section`
   & .ImgSliderCont{
     height: 100%;
     width: 100%;
-    background-color: #DDD8D5;
+    border-left: thick solid #855744;
     overflow-x: hidden;
     position: relative;
     position: relative;

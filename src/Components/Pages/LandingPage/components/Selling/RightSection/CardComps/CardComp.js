@@ -1,9 +1,11 @@
 import { CardCompStyle } from "./CardComp.style";
 
-const CardComp = ({height}) => {
+const CardComp = ({height,opacity}) => {
   return ( 
     <CardCompStyle 
-    height={height}>
+    height={height}
+    opacity={opacity}
+    >
 
     </CardCompStyle>
    );

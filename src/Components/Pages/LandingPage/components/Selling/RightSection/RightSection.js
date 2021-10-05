@@ -27,7 +27,10 @@ const RightSection = () => {
             (shownImg===2)?"-600px":"-900px"}}>
 
           {imageArray.map((item,index)=>{
-            return <CardComp height={index!==shownImg?"70%":"90%"}/>
+            return <CardComp 
+            opacity={index!==shownImg?"0.3":"1"}
+            height={index!==shownImg?"70%":"90%"}
+            />
           })}
           
         </div>
