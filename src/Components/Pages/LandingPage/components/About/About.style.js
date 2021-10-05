@@ -150,6 +150,11 @@ export const AboutStyles = styled.div`
           background-color:#946e5e ;
           cursor: pointer;
         }
+        @media only screen and (max-width: 450px) {
+          font-size: 1rem;
+          height:24px;
+          width: 100px;
+        }
       }
 
       &-imgContainer{
