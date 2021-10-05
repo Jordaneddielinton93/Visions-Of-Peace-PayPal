@@ -1,4 +1,7 @@
 import aboutimgBtm from "./images/aboutimgBtm.png"
+import spelljar from "./images/spelljar.jpg"
+import incenseStick from "./images/incenseStick.jpg"
+import bracelet from "./images/bracelets.jpg"
 const AboutBottom = () => {
   return ( 
     <div className="About_bottom">
@@ -24,9 +27,9 @@ const AboutBottom = () => {
         </button >
 
         <div className="About_bottom__right-imgContainer">
-          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
-          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
-          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs box3img"/>
+          <img  alt="" srcset={spelljar} width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={incenseStick} width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={bracelet} width="30%" className="btm-imgs box3img"/>
         </div>
       </section>
 
