@@ -3,14 +3,16 @@ import { FcPrevious } from 'react-icons/fc';
 import CardComp from "./CardComps/CardComp";
 
 import img1 from "../../../../../Images/firething.png"
+import img2 from "../../../../../Images/image1.png"
+import img3 from "../../../../../Images/image2.png"
 import { useState } from "react";
 
 const RightSection = () => {
 
   let imageArray=[
-    {img1:img1,discription:"number 1 brief discription",price:"£5.00"},
-    {img1:img1,discription:"number 2 of what the item",price:"£15.00"},
-    {img1:img1,discription:"number 3 is about im not",price:"£25.00"},
+    {img1:img2,discription:"number 1 brief discription",price:"£5.00"},
+    {img1:img3,discription:"number 2 of what the item",price:"£15.00"},
+    {img1:img2,discription:"number 3 is about im not",price:"£25.00"},
     {img1:img1,discription:"number 4 sure what yet",price:"£35.00"}
     
   ]

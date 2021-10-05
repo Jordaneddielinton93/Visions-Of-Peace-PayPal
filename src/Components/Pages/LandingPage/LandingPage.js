@@ -18,7 +18,7 @@ const LandingPage = () => {
       <Selling/>
       <Intro/>
       
-      <h1>gallary will go here</h1>
+      
     </LandingPageStyled>
    );
 }
