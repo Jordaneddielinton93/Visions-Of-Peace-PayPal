@@ -15,7 +15,7 @@ const AboutTop = () => {
           </p>
            
           <p>
-            Maybe its a congradulations gift set
+            Maybe its a congradulations gift set to keep their spirtis alive
           </p>
           
         </article>
