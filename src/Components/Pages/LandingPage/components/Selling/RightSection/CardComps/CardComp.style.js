@@ -21,4 +21,23 @@ export const CardCompStyle = styled.div`
     max-width: 100%;
     max-height: 33%;
   }
+  & .card-btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    &-buttons{
+      height: 44px;
+      width: 100px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight:900 ;
+    }
+    & .cardBtn1{
+      background-color:#855744 ;
+      color: white;
+    }
+    & .cardBtn2{
+      
+    }
+  }
 `

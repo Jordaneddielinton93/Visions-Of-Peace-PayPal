@@ -11,6 +11,11 @@ const CardComp = ({height,opacity,boxShadow,image,discription}) => {
 
       {discription}
 
+      <div className="card-btn-container">
+        <button className="card-btn-container-buttons cardBtn1">buy</button>
+        <button className="card-btn-container-buttons cardBtn2">Add to Cart</button>
+      </div>
+
     </CardCompStyle>
    );
 }

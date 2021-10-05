@@ -21,14 +21,26 @@ export const RightSectionStyle = styled.section`
       font-size: 3rem;
       stroke-width: 10px;
       fill: white;
-      height: 60px;
+      height: 100px;
       z-index: 10;
       left: -13px;
       &:hover{
         stroke-width:5px;
       }
       & polygon{
-        color: white;       
+        color: white;
+        
+        animation: bounce 2s ease infinite;
+        
+        @keyframes bounce {
+            70% { transform:translateY(0%); }
+            80% { transform:translateY(-18%); }
+            90% { transform:translateY(0%); }
+            95% { transform:translateY(-10%); }
+            97% { transform:translateY(0%); }
+            99% { transform:translateY(-6%); }
+            100% { transform:translateY(0); }
+        }
       }
       &:hover{
         cursor: pointer;

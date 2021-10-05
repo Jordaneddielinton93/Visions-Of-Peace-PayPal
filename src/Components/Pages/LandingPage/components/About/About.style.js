@@ -17,6 +17,8 @@ export const AboutStyles = styled.div`
     border: 3px solid #FCFDFF;
     border-right: none;
     z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
   }
 
 

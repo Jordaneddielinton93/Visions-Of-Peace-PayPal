@@ -8,10 +8,10 @@ import { useState } from "react";
 const RightSection = () => {
 
   let imageArray=[
-    {img1:img1,discription:"number 1"},
-    {img1:img1,discription:"number 2"},
-    {img1:img1,discription:"number 3"},
-    {img1:img1,discription:"number 4"}
+    {img1:img1,discription:"number 1 brief discription"},
+    {img1:img1,discription:"number 2 of what the item"},
+    {img1:img1,discription:"number 3 is about im not"},
+    {img1:img1,discription:"number 4 sure what yet"}
     
   ]
 
@@ -33,14 +33,16 @@ const RightSection = () => {
             (shownImg===2)?"-600px":"-900px"}}>
 
           {imageArray.map((item,index)=>{
-            return <CardComp 
-            opacity={index!==shownImg?"0.3":"1"}
-            height={index!==shownImg?"70%":"90%"}
-            boxShadow={index!==shownImg?"none":"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"}
+            return (
+              <CardComp 
+              opacity={index!==shownImg?"0.3":"1"}
+              height={index!==shownImg?"70%":"90%"}
+              boxShadow={index!==shownImg?"none":"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"}
 
-            image={item.img1}
-            discription={item.discription}
-            />
+              image={item.img1}
+              discription={item.discription}
+              />
+            )
           })}
           
         </div>
