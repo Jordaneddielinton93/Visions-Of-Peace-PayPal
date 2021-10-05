@@ -13,6 +13,7 @@ const RightSection = () => {
     {img1:img2,discription:"number 1 brief discription",price:"£5.00"},
     {img1:img3,discription:"number 2 of what the item",price:"£15.00"},
     {img1:img2,discription:"number 3 is about im not",price:"£25.00"},
+    {img1:img2,discription:"number 3 is about im not",price:"£25.00"},
     {img1:img1,discription:"number 4 sure what yet",price:"£35.00"}
     
   ]
@@ -23,7 +24,7 @@ const RightSection = () => {
     <RightSectionStyle>
 
       <div className="leftArrowContainer">
-        <FcPrevious className="sellArrowSvg" onClick={()=>setShownImg(shownImg!==3?shownImg+1:0)}/>
+        <FcPrevious className="sellArrowSvg" onClick={()=>setShownImg(shownImg!==4?shownImg+1:0)}/>
       </div>
 
 
@@ -32,7 +33,8 @@ const RightSection = () => {
         <div className="ImgSliderCont_slider" style={{left:
              shownImg===0 ?"0px":
             (shownImg===1)?"-300px":
-            (shownImg===2)?"-600px":"-900px"}}>
+            (shownImg===2)?"-600px":
+            (shownImg===3)?"-900px":"-1200px"}}>
 
           {imageArray.map((item,index)=>{
             return (
