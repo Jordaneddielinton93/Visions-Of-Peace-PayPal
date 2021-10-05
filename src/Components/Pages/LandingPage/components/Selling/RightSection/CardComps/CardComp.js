@@ -1,6 +1,6 @@
 import { CardCompStyle } from "./CardComp.style";
 
-const CardComp = ({height,opacity,boxShadow,image,discription}) => {
+const CardComp = ({height,opacity,boxShadow,image,discription,price}) => {
   return ( 
     <CardCompStyle 
     height={height}
@@ -9,7 +9,9 @@ const CardComp = ({height,opacity,boxShadow,image,discription}) => {
     >
       <img alt="" srcset={image} width="90%" height="33%" className="card-img"/>
 
-      {discription}
+      <p className="card-discription">{discription}</p>
+
+      <p className="card-price">{price}</p>
 
       <div className="card-btn-container">
         <button className="card-btn-container-buttons cardBtn1">buy</button>

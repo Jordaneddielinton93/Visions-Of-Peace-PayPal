@@ -8,10 +8,10 @@ import { useState } from "react";
 const RightSection = () => {
 
   let imageArray=[
-    {img1:img1,discription:"number 1 brief discription"},
-    {img1:img1,discription:"number 2 of what the item"},
-    {img1:img1,discription:"number 3 is about im not"},
-    {img1:img1,discription:"number 4 sure what yet"}
+    {img1:img1,discription:"number 1 brief discription",price:"£5.00"},
+    {img1:img1,discription:"number 2 of what the item",price:"£15.00"},
+    {img1:img1,discription:"number 3 is about im not",price:"£25.00"},
+    {img1:img1,discription:"number 4 sure what yet",price:"£35.00"}
     
   ]
 
@@ -40,6 +40,7 @@ const RightSection = () => {
               boxShadow={index!==shownImg?"none":"rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;"}
 
               image={item.img1}
+              price={item.price}
               discription={item.discription}
               />
             )
