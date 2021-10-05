@@ -22,6 +22,7 @@ export const CardCompStyle = styled.div`
     max-height: 33%;
   }
   & .card-discription{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
   }
   & .card-price{
