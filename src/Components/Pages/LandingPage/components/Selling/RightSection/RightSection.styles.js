@@ -24,11 +24,11 @@ export const RightSectionStyle = styled.section`
       height: 60px;
       z-index: 10;
       left: -13px;
+      &:hover{
+        stroke-width:5px;
+      }
       & polygon{
-        color: white;
-        font-size: 2rem;
-
-        
+        color: white;       
       }
       &:hover{
         cursor: pointer;
