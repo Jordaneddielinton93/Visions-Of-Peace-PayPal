@@ -16,7 +16,7 @@ const AboutBottom = () => {
         </h3>
 
         <p className="About_bottom__right-para">
-          Ihope to help heal and feel alive with my products.
+          I have a selection of life changing incencse sticks ,spell jars and Chakra Bracelets.
         </p>
 
         <button className="About_bottom__right-btn">
@@ -26,7 +26,7 @@ const AboutBottom = () => {
         <div className="About_bottom__right-imgContainer">
           <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
           <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
-          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs"/>
+          <img  alt="" srcset={aboutimgBtm} width="30%" className="btm-imgs box3img"/>
         </div>
       </section>
 
