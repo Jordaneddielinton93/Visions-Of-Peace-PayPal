@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import LandingPage from '../Pages/LandingPage/LandingPage';
 import NavBar from '../NavBar/NavBar';
+import CartPage from '../Pages/CartPage/CartPage';
 
 
 export let pageWrapper = React.createContext()
@@ -42,6 +43,7 @@ function App() {
       <NavBar offSetY={offSetY}/>
         <Switch>
           <Route exact path="/" component={LandingPage}/>
+          <Route path="/Cart" component={CartPage}/>
 
         </Switch>
       </Router>

@@ -28,6 +28,7 @@ export const NavBarStyled = styled.header`
       height: 100%;
       & li{
         font-size: 1.2rem;
+        cursor: pointer;
         @media only screen and (max-width: 900px) {
           font-size: 2vw;
         }
@@ -76,7 +77,7 @@ export const NavBarStyled = styled.header`
         text-align: center;
         background-color: aliceblue;
         width: 100%;
-
+        cursor: pointer;
       }
 
     }

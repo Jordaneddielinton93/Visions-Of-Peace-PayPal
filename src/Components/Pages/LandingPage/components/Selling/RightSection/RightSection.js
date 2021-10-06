@@ -25,12 +25,16 @@ const RightSection = () => {
 
       <div className="leftArrowContainer">
         <FcPrevious className="sellArrowSvg" onClick={()=>setShownImg(shownImg!==4?shownImg+1:0)}/>
+        {/* every click of the button will add one to the state 
+        if the state is 4 put it back to 0
+         */}
       </div>
 
 
-      
+        {/* if the count is one of the numbers below mpve the position 300px left */}
       <div className="ImgSliderCont">
-        <div className="ImgSliderCont_slider" style={{left:
+        <div className="ImgSliderCont_slider" style={{
+          left:
              shownImg===0 ?"0px":
             (shownImg===1)?"-300px":
             (shownImg===2)?"-600px":

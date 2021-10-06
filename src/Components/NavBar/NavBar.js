@@ -1,6 +1,7 @@
 import { NavBarStyled } from "./NavBar.style";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const NavBar = ({offSetY}) => {
 
   let [openNav,setOpenNav] = useState(false)
@@ -14,20 +15,20 @@ const NavBar = ({offSetY}) => {
 
         {/* desktop */}
         <ul className="desktop-ul">
-          <li>SHOP</li>
-          <li>SIGN-IN</li>
-          <h1> Visions Of Peace</h1>
-          <li>ABOUT</li>
-          <li>CART</li>
+          <li><Link>SHOP</Link></li>
+          <li><Link>SIGN-IN</Link></li>
+          <h1><Link to="/"> Visions Of Peace</Link></h1>
+          <li><Link>ABOUT</Link></li>
+          <li><Link to="/Cart">CART</Link></li>
         </ul>
 
         {/* mobile */}
         <ul className="mobile-ul">
           <GiHamburgerMenu onClick={()=>setOpenNav(!openNav)}/>
-          <li>SHOP</li>
-          <li>SIGN - IN</li>
+          <li><Link> SHOP</Link></li>
+          <li><Link>SIGN - IN</Link></li>
           <li>ABOUT</li>
-          <li>CART</li>
+          <li><Link to="/Cart">CART</Link></li>
         </ul>
 
       </nav>
