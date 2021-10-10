@@ -16,7 +16,7 @@ const NavBar = ({offSetY}) => {
         {/* desktop */}
         <ul className="desktop-ul">
           <li><Link>SHOP</Link></li>
-          <li><Link>SIGN-IN</Link></li>
+          <li><Link to="/SignIn">SIGN-IN</Link></li>
           <h1><Link to="/"> Visions Of Peace</Link></h1>
           <li><Link>ABOUT</Link></li>
           <li><Link to="/Cart">CART</Link></li>
@@ -26,7 +26,7 @@ const NavBar = ({offSetY}) => {
         <ul className="mobile-ul">
           <GiHamburgerMenu onClick={()=>setOpenNav(!openNav)}/>
           <li><Link> SHOP</Link></li>
-          <li><Link>SIGN - IN</Link></li>
+          <li><Link to="/SignIn">SIGN - IN</Link></li>
           <li>ABOUT</li>
           <li><Link to="/Cart">CART</Link></li>
         </ul>

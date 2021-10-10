@@ -12,6 +12,8 @@ import {
 import LandingPage from '../Pages/LandingPage/LandingPage';
 import NavBar from '../NavBar/NavBar';
 import CartPage from '../Pages/CartPage/CartPage';
+import SignInPage from '../Pages/SignInPage/SignInPage';
+import SignUpPage from '../Pages/SignUpPage/SignUpPage';
 
 
 export let pageWrapper = React.createContext()
@@ -44,7 +46,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={LandingPage}/>
           <Route path="/Cart" component={CartPage}/>
-
+          <Route path="/SignIn" component={SignInPage}/>
+          <Route path="/SignUp" component={SignUpPage}/>
         </Switch>
       </Router>
       </pageWrapper.Provider>
