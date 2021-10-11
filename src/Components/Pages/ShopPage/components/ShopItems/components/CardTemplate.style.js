@@ -5,9 +5,11 @@ export const CardTemplateStyle = styled.div`
   height: 280px;
   background-color: #E8DCD5;
   border-radius:10px;
+  border: solid 3px white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   &  .card_header{
     display: flex;
     align-items: center;
@@ -22,6 +24,7 @@ export const CardTemplateStyle = styled.div`
       background-color:#C4C4C4;
       padding:0px 5px;
       border-radius: 5px;
+      text-shadow: 1px 4px 0px rgba(150, 150, 150, 0.44);
     }
   }
   & .card_IMG{
@@ -38,6 +41,7 @@ export const CardTemplateStyle = styled.div`
       font-size: 1.3rem;
       color: white;
       margin-left: 5px;
+      text-shadow: 1px 4px 0px rgba(150, 150, 150, 0.44);
     }
     &-discr{
       margin-left: 5px;

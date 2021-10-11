@@ -1,6 +1,25 @@
+import { useEffect } from 'react';
 import { BsFilterLeft } from 'react-icons/bs';
 import CardsTemplate from './CardsTemplate';
+// import Axios from "axios"
 const CardContainer = () => {
+
+
+  async function getData(){
+    const response = await fetch("http://localhost:5000/read")
+    const data = await response.json()
+    console.log(data)
+  }
+
+  useEffect(()=>{
+    // Axios.post("http://localhost:5000/")
+    getData()
+  },[])
+
+
+
+
+
   return ( 
     <div className="CardContainer">
 

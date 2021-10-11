@@ -11,7 +11,7 @@ margin-top: 30px;
   & .CardContainer{
     width: 1000px;
     min-height: 100%;
-    background-color: brown;
+
     display: flex;
     flex-direction: column;
     &__Header{
@@ -76,7 +76,6 @@ margin-top: 30px;
     &__cardHolder{
       height:100% ;
       max-width: 100%;
-      background-color: tomato;
       margin-right: 80px;
       padding: 20px;
     }

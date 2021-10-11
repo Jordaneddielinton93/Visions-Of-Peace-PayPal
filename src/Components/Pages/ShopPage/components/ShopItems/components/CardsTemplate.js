@@ -11,7 +11,7 @@ const CardsTemplate = ({price,title,discr}) => {
         <AiOutlineHeart/>
         <h2 className="card_header-title">£{price}</h2>
       </header>
-      <img alt="" srcset={""} className="card_IMG"/>
+      <img alt="" srcSet={""} className="card_IMG"/>
       <div className="card_titleDisc-container">
         <h1 className="card_titleDisc-container-title">{title}</h1>
         <p className="card_titleDisc-container-discr">{discr}</p>
