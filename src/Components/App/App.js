@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 import LandingPage from '../Pages/LandingPage/LandingPage';
 import NavBar from '../NavBar/NavBar';
-import CartPage from '../Pages/CartPage/CartPage';
+import ShopPage from '../Pages/ShopPage/ShopPage';
 import SignInPage from '../Pages/SignInPage/SignInPage';
 import SignUpPage from '../Pages/SignUpPage/SignUpPage';
 
@@ -35,8 +35,6 @@ function App() {
 
   
 
-
-
   return (
 
     <div className="App">
@@ -45,7 +43,7 @@ function App() {
       <NavBar offSetY={offSetY}/>
         <Switch>
           <Route exact path="/" component={LandingPage}/>
-          <Route path="/Cart" component={CartPage}/>
+          <Route path="/Shop" component={ShopPage}/>
           <Route path="/SignIn" component={SignInPage}/>
           <Route path="/SignUp" component={SignUpPage}/>
         </Switch>

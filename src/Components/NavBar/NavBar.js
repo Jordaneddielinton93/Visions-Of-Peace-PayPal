@@ -15,11 +15,11 @@ const NavBar = ({offSetY}) => {
 
         {/* desktop */}
         <ul className="desktop-ul">
-          <li><Link>SHOP</Link></li>
+          <li><Link to="/Shop">SHOP</Link></li>
           <li><Link to="/SignIn">SIGN-IN</Link></li>
           <h1><Link to="/"> Visions Of Peace</Link></h1>
           <li><Link>ABOUT</Link></li>
-          <li><Link to="/Cart">CART</Link></li>
+          <li><Link to="/">CART</Link></li>
         </ul>
 
         {/* mobile */}

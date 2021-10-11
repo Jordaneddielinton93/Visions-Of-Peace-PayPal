@@ -1,9 +1,10 @@
-import { StoreHeroStyle } from "./StoreHero.style";
+import { ShopHeroStyle } from "./ShopHero.style";
 
-const StoreHero = () => {
+const ShopHero = () => {
   return ( 
-    <StoreHeroStyle>
+    <ShopHeroStyle>
       <section className="Hero__left">
+        
         <h1>MY HOT SUMMER TRENDS</h1>
         <h2>New Angels discount</h2>
         <p>Were now doing an amazing gift set range</p>
@@ -13,11 +14,12 @@ const StoreHero = () => {
       </section>
 
       <section className="Hero__right">
-        
+        <div>
 
+        </div>
       </section>
-    </StoreHeroStyle>
+    </ShopHeroStyle>
    );
 }
  
-export default StoreHero;
+export default ShopHero;

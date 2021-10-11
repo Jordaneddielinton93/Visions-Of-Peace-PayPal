@@ -1,11 +1,12 @@
 import { LandingPageStyled } from "../LandingPage/LandingPage.style";
-import StoreHero from "./components/StoreHero/StoreHero";
+import ShopHero from "./components/ShopHero/ShopHero";
+import ShopItems from "./components/ShopItems/ShopItems";
 
 const StorePage = () => {
   return ( 
     <LandingPageStyled>
-      <StoreHero/>
-
+      <ShopHero/>
+      <ShopItems/>
     </LandingPageStyled>
    );
 }
