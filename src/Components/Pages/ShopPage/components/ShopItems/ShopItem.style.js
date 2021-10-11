@@ -14,6 +14,7 @@ margin-top: 30px;
 
     display: flex;
     flex-direction: column;
+    
     &__Header{
       display: flex;
       width: 100%;
@@ -77,7 +78,10 @@ margin-top: 30px;
       height:100% ;
       max-width: 100%;
       margin-right: 80px;
-      padding: 20px;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
   }
 `

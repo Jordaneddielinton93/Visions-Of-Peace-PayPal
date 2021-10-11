@@ -1,18 +1,21 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BsFilterLeft } from 'react-icons/bs';
 import CardsTemplate from './CardsTemplate';
 // import Axios from "axios"
 const CardContainer = () => {
 
 
+  let [data,setData]=useState([])
+
   async function getData(){
     const response = await fetch("http://localhost:5000/read")
     const data = await response.json()
+    setData(data)
     console.log(data)
   }
 
   useEffect(()=>{
-    // Axios.post("http://localhost:5000/")
+    
     getData()
   },[])
 
@@ -41,7 +44,20 @@ const CardContainer = () => {
       </header>
 
       <div className="CardContainer__cardHolder">
-        <CardsTemplate price="20" title="Clear quartz" discr="Considered “master healer.”"/>
+
+
+        {
+          data.map((obj)=>{
+            return (
+            <CardsTemplate id={obj._id} 
+            price={obj.price} 
+            title={obj.itemName} 
+            discr={obj.discription}
+            images={obj.image}
+            />)
+          })
+        }
+        
       </div>
 
     </div>
