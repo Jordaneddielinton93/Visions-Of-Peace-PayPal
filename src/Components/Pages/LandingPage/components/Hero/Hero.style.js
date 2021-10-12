@@ -8,6 +8,16 @@ export const HeroStyled=styled.main`
   align-items: center;
   position: relative;
   overflow: hidden;
+
+  & .DISCLAIMER{
+    position: absolute;
+    top:30%;
+    z-index: 20;
+    font-size: 8rem;
+    color: red;
+    background-color: #bbbb;
+  }
+
   @media only screen and (max-width: 600px) {
       min-height:500px ;
   }

@@ -10,6 +10,7 @@ export const CardTemplateStyle = styled.div`
   flex-direction: column;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
   &:hover{
       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
@@ -24,7 +25,7 @@ export const CardTemplateStyle = styled.div`
     &-title{
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       font-size: 1.2rem;
-      background-color:#C4C4C4;
+      background-color:white;
       padding:0px 5px;
       border-radius: 5px;
       text-shadow: 1px 4px 0px rgba(150, 150, 150, 0.44);
@@ -68,7 +69,7 @@ export const CardTemplateStyle = styled.div`
         width: 20px;
         height: 20px;
         font-size: 1rem;
-
+        cursor: pointer;
       }
       
     }
@@ -79,6 +80,7 @@ export const CardTemplateStyle = styled.div`
       color: white;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
       border-bottom-right-radius: 10px;
+      cursor: pointer;
     }
   }
 

@@ -9,6 +9,7 @@ const Hero = () => {
   
   return ( 
     <HeroStyled>
+      <h1 className="DISCLAIMER">THIS SITE IS STILL BEING MADE</h1>
 
       <img srcSet={IMG1} alt="" />
       <TextScroller
