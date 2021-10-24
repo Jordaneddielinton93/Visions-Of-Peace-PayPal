@@ -8,7 +8,7 @@ const CardContainer = () => {
   let [data,setData]=useState([])
 
   async function getData(){
-    const response = await fetch("http://localhost:5000/read")
+    const response = await fetch("http://localhost:5000/store/AllItems")
     const data = await response.json()
     setData(data)
     console.log(data)
@@ -18,9 +18,6 @@ const CardContainer = () => {
     
     getData()
   },[])
-
-
-
 
 
   return ( 
