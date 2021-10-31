@@ -7,8 +7,10 @@ const CardContainer = () => {
 
   let [data,setData]=useState([])
 
+  
+
   async function getData(){
-    const response = await fetch("http://localhost:5000/store/AllItems")
+    const response = await fetch("http://localhost:5000/Shop")
     const data = await response.json()
     setData(data)
     console.log(data)
@@ -46,11 +48,12 @@ const CardContainer = () => {
         {
           data.map((obj)=>{
             return (
-            <CardsTemplate id={obj._id} 
+            <CardsTemplate 
+            id={obj.list_id} 
             price={obj.price} 
             title={obj.itemName} 
             discr={obj.discription}
-            images={obj.image}
+            images={obj.photo}
             />)
           })
         }
